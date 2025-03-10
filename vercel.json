@@ -9,7 +9,33 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "server.js"
+        "dest": "/server.js"
       }
-    ]
+    ],
+    "env": {
+      "GOOGLE_MAPS_API_KEY": "AIzaSyBbeHwmo53v5STTytL8tlmICKSxciwGsrA",
+      "PORT": "10113",
+      "EMAIL_USER": "abhisheklokhande676@gmail.com",
+      "EMAIL_PASS": "neuf mcuy uqot txsx",
+      "PASSWORD": "v6YJkLbz3yVpeJAO",
+      "USER": "abhisheklokhande676",
+      "KWT_KEY": "1234567890",
+      "MONGODB_SERVER": "mongodb+srv://abhisheklokhande676:v6YJkLbz3yVpeJAO@cluster0.0c8fw.mongodb.net/garageMap?retryWrites=true&w=majority&appName=Cluster0"
+    },
+    "functions": {
+      "server.js": {
+        "memory": 1024,
+        "maxDuration": 10
+      }
+    },
+    "build": {
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
+    "files": [
+      "upload/images/**"
+    ],
+    "cleanUrls": true
   }
+  
